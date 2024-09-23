@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/restaurantTotal.css">
+    <title>맛집 전체 리스트 | WarriorDining</title>
+
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="header-content">
+            <a href="#" class="logo">WarriorDining</a>
+            <div class="auth-buttons">
+                <a href="#">로그인</a>
+                <a href="#">회원 가입</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="nav-bar">
+    <div class="container">
+        <ul>
+            <li><a href="/topreservation">예약 TOP</a></li>
+            <li><a href="#">이달의 맛집</a></li>
+            <li><a href="/reservation">예약</a></li>
+            <li><a href="#">문의</a></li>
+        </ul>
+    </div>
+</div>
+
+<section class="restaurant-list-container">
+    <form action="">
+        <div class="sidebar">
+            <h2>검색</h2>
+            <h3>지역 선택</h3>
+            <select id="location" name="location">
+                <option value="">지역을 선택하세요</option>
+                <option value="seoul">서울</option>
+                <option value="busan">부산</option>
+                <option value="incheon">인천</option>
+                <!-- 추가 지역 옵션 -->
+            </select>
+            <h3>카테고리</h3>
+            <select id="category" name="category">
+                <option value="">카테고리 선택를 선택하세요</option>
+                <option value="korean">한식</option>
+                <option value="chinese">중식</option>
+                <option value="japanese">일식</option>
+                <!-- 추가 카테고리 옵션 -->
+            </select>
+            <h3>가격대</h3>
+            <select id="price" name="price">
+                <option value="">가격대 선택</option>
+                <option value="low">20,000원 이하</option>
+                <option value="medium">20,000 ~ 50,000원</option>
+                <option value="high">50,000 ~ 80,000원</option>
+                <option value="veryhigh">80,000 ~ 110,000원</option>
+                <option value="superhigh">110,000원 이상</option>
+            </select>
+            <h3>레스토랑 이름 검색</h3>
+            <input type="text" id="keyword" placeholder="레스토랑 검색">
+            <button type="submit">검색</button>
+        </div>
+    </form>
+    <div class="restaurant-list">
+        <h1>맛집 전체 리스트</h1>
+
+        <ul>
+            <li class="restaurant-item" data-id="1">
+                <img src="https://via.placeholder.com/200x150" alt="레스토랑 이미지">
+                <div class="restaurant-details">
+                    <h2>레스토랑 이름 1</h2>
+                    <p>이곳은 맛있는 음식을 제공하는 최고의 레스토랑입니다. 분위기와 서비스가 뛰어나며, 특별한 날에 방문하기 좋은 장소입니다.</p>
+                </div>
+            </li>
+            <li class="restaurant-item" data-id="2">
+                <img src="https://via.placeholder.com/200x150" alt="레스토랑 이미지">
+                <div class="restaurant-details">
+                    <h2>레스토랑 이름 2</h2>
+                    <p>이곳은 맛있는 음식을 제공하는 최고의 레스토랑입니다. 분위기와 서비스가 뛰어나며, 특별한 날에 방문하기 좋은 장소입니다.</p>
+                </div>
+            </li>
+            <li class="restaurant-item" data-id="3">
+                <img src="https://via.placeholder.com/200x150" alt="레스토랑 이미지">
+                <div class="restaurant-details">
+                    <h2>레스토랑 이름 3</h2>
+                    <p>이곳은 맛있는 음식을 제공하는 최고의 레스토랑입니다. 분위기와 서비스가 뛰어나며, 특별한 날에 방문하기 좋은 장소입니다.</p>
+                </div>
+            </li>
+            <li class="restaurant-item" data-id="3">
+                <img src="https://via.placeholder.com/200x150" alt="레스토랑 이미지">
+                <div class="restaurant-details">
+                    <h2>레스토랑 이름 3</h2>
+                    <p>이곳은 맛있는 음식을 제공하는 최고의 레스토랑입니다. 분위기와 서비스가 뛰어나며, 특별한 날에 방문하기 좋은 장소입니다.</p>
+                </div>
+            </li>
+            <li class="restaurant-item" data-id="3">
+                <img src="https://via.placeholder.com/200x150" alt="레스토랑 이미지">
+                <div class="restaurant-details">
+                    <h2>레스토랑 이름 3</h2>
+                    <p>이곳은 맛있는 음식을 제공하는 최고의 레스토랑입니다. 분위기와 서비스가 뛰어나며, 특별한 날에 방문하기 좋은 장소입니다.</p>
+                </div>
+            </li>
+            <li class="restaurant-item" data-id="3">
+                <img src="https://via.placeholder.com/200x150" alt="레스토랑 이미지">
+                <div class="restaurant-details">
+                    <h2>레스토랑 이름 3</h2>
+                    <p>이곳은 맛있는 음식을 제공하는 최고의 레스토랑입니다. 분위기와 서비스가 뛰어나며, 특별한 날에 방문하기 좋은 장소입니다.</p>
+                </div>
+            </li>
+            <li class="restaurant-item" data-id="3">
+                <img src="https://via.placeholder.com/200x150" alt="레스토랑 이미지">
+                <div class="restaurant-details">
+                    <h2>레스토랑 이름 3</h2>
+                    <p>이곳은 맛있는 음식을 제공하는 최고의 레스토랑입니다. 분위기와 서비스가 뛰어나며, 특별한 날에 방문하기 좋은 장소입니다.</p>
+                </div>
+            </li>
+            <li class="restaurant-item" data-id="3">
+                <img src="https://via.placeholder.com/200x150" alt="레스토랑 이미지">
+                <div class="restaurant-details">
+                    <h2>레스토랑 이름 3</h2>
+                    <p>이곳은 맛있는 음식을 제공하는 최고의 레스토랑입니다. 분위기와 서비스가 뛰어나며, 특별한 날에 방문하기 좋은 장소입니다.</p>
+                </div>
+            </li>
+            <li class="restaurant-item" data-id="3">
+                <img src="https://via.placeholder.com/200x150" alt="레스토랑 이미지">
+                <div class="restaurant-details">
+                    <h2>레스토랑 이름 3</h2>
+                    <p>이곳은 맛있는 음식을 제공하는 최고의 레스토랑입니다. 분위기와 서비스가 뛰어나며, 특별한 날에 방문하기 좋은 장소입니다.</p>
+                </div>
+            </li>
+            <li class="restaurant-item" data-id="3">
+                <img src="https://via.placeholder.com/200x150" alt="레스토랑 이미지">
+                <div class="restaurant-details">
+                    <h2>레스토랑 이름 3</h2>
+                    <p>이곳은 맛있는 음식을 제공하는 최고의 레스토랑입니다. 분위기와 서비스가 뛰어나며, 특별한 날에 방문하기 좋은 장소입니다.</p>
+                </div>
+            </li>
+            <!-- 추가 레스토랑 항목 -->
+        </ul>
+    </div>
+</section>
+<button id="scrollToTop" class="scroll-to-top"></button>
+
+<footer>
+    <p>&copy; 2024 WarriorDining. All rights reserved.</p>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const restaurantItems = document.querySelectorAll('.restaurant-item');
+
+        restaurantItems.forEach(item => {
+            item.addEventListener('click', function() {
+                const restaurantId = this.dataset.id;
+                // 클릭 시 이동할 URL을 설정합니다. 예를 들어, 상세 페이지로 이동합니다.
+                window.location.href = `/restaurant/${restaurantId}`;
+            });
+        });
+
+        document.querySelector('button').addEventListener('click', function() {
+            const location = document.getElementById('location').value;
+            const category = document.getElementById('category').value;
+            const price = document.getElementById('price').value;
+            const keyword = document.getElementById('keyword').value;
+
+            // 필터링 또는 검색 로직을 추가합니다. 예를 들어, 쿼리 문자열을 생성하여 검색 페이지로 이동합니다.
+            const query = new URLSearchParams({ location, category, price, keyword }).toString();
+            window.location.href = `/search?${query}`;
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const scrollToTopButton = document.getElementById('scrollToTop');
+
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) { // 스크롤 위치가 300px 이상일 때 버튼 표시
+                scrollToTopButton.style.display = 'block';
+            } else {
+                scrollToTopButton.style.display = 'none';
+            }
+        });
+
+        scrollToTopButton.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    });
+</script>
+
+</body>
+</html>
